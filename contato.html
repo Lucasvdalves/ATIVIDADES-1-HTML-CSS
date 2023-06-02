@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <script src="https://kit.fontawesome.com/d35db4141f.js" crossorigin="anonymous"></script> <!--FontAwesome Icones-->
+    <link rel="stylesheet" href="style.css"> <!--Folha de estilos-->
+    <link rel="icon" type="image/png" href="img/favicon.png"> <!--favicon-->
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Farmácia DEVinHouse</title>
+</head>
+<body>
+
+<!--frame do topo--> 
+<div class="topframe">Antídoto para Zumbi com <b>30% OFF</b></div>
+
+<!--Header-->
+<div class="header-nav">
+    <div class="logo"><a href="index.html"><img class="logo-img" src="img/logo.png" alt="logo farmacia"></a></div>
+<!--barra de pesquisa-->
+<div class="pesquisa-container">
+    <input type="text" class="barra-pesquisa" placeholder="Procurar medicamento"> 
+    <i class="botao-pesquisa fa-solid fa-magnifying-glass"></i>
+  </div>
+<!--icones de navegação-->
+<div class="icones-container">
+    
+        <a class="link-icones" href="index.html"><i class="icones fa-solid fa-user"></i></a>
+        <a class="link-icones" href="sobre.html"><i class="icones fa-solid fa-heart"></i></a>
+        <a class="link-icones" href="contato.html"><i class="icones fa-solid fa-cart-plus"></i></a>
+    
+                    
+                    
+</div>
+        
+<!--Opções do Menu-->
+    <nav class="nav-menu">
+               <ul class="nav-bar">
+                           <li class="menu-botao"><a class="link-botao" href="index.html">INICIO</a></li>
+                           <li class="menu-botao"><a class="link-botao" href="medicamentos.html">TODOS OS MEDICAMENTOS</a></li>
+                           <li class="menu-botao"><a class="link-botao" href="sobre.html">QUEM SOMOS</a></li>
+                           <li class="menu-botao"><a class="link-botao" href="contato.html">FALE CONOSCO</a></li>
+                        </ul>
+    </nav>
+</div>
+<!--Fim do Header-->
+
+<!--Titulo de Contato-->
+
+<h2 class="titulo">Fale Conosco</h2>
+
+<!--Fim Titulo de Contato-->
+<!--Inicio de Formulário-->
+
+
+<h3 class="titulo-form">Formulário de contato</h3>
+
+<div class="form-container">
+
+    <form class="form" action="/enviar-contato" method="POST">
+   
+    <div class="form-subcontainer">
+      <label class="form-texto" for="nome" >Nome:</label><br>
+      <input class="form-input" type="text" id="nome" name="nome" placeholder="Digite seu nome completo" required>
+    </div>
+  
+    <div class="form-subcontainer">
+      <label class="form-texto" for="telefone" >Telefone para contato:</label><br>
+      <input class="form-input" type="tel" id="telefone" placeholder="Digite seu telefone com DDD" name="telefone" required>
+    </div>
+  
+    <div class="form-subcontainer">
+      <label class="form-texto" for="email">E-mail:</label><br>
+      <input class="form-input"type="email" id="email" name="email" placeholder="Digite seu e-mail" required>
+    </div>
+  
+    <div class="form-subcontainer">
+      <label class="form-texto" for="assunto">Assunto:</label><br>
+      <select class="form-input" id="assunto" name="assunto" required>
+        <option class="form-texto" value="">Selecione o assunto</option>
+        <option class="form-texto" value="comercial">Comercial</option>
+        <option class="form-texto" value="duvidas">Duvidas</option>
+        <option class="form-texto" value="orcamento">Orçamento</option>
+      </select>
+    </div>
+  
+    <div class="form-subcontainer">
+      <label class="form-texto" for="mensagem">Sua mensagem:</label><br>
+      <textarea class="form-input" id="mensagem" name="mensagem" rows="4" placeholder="Digite mais detalhes sobre sua solicitação" required></textarea>
+    </div>
+  
+    <div class="form-subcontainer">
+      <input type="checkbox" id="orcamento" name="orcamento">
+      <label class="form-texto" for="orcamento">Esta mensagem é sobre um orçamento</label>
+    </div>
+  
+    <button class="botao-form" type="submit">Enviar</button>
+  </form>
+  <div>
+    <h2 class="texto-img">Estamos aguardando ansiosos pelo seu contato!</h2>
+    <img class="pessoas-form-img" src="img/pessoascima.png" alt=""></div>
+</div>
+  <!--Fim de Formulário-->
+  <!--Inicio Localização-->
+<div class="localizacao">
+    <div class="texto-localizacao">
+      <h2>Faça-nos uma vísita.</h2>
+      <p>Localizada em um local conveniente, nossa farmácia é um espaço acolhedor e profissional, projetado para atender às suas necessidades de saúde e bem-estar.
+         Nossa equipe dedicada e experiente está pronta para oferecer suporte e orientação personalizada, garantindo que você receba o cuidado adequado.</p><br><br>
+      <h2>Nossas Redes Sociais</h2>
+      <p><i class="localizacao-icons fa-brands fa-square-instagram"></i>
+         <i class="localizacao-icons fa-brands fa-square-facebook"></i>
+         <i class="localizacao-icons fa-brands fa-linkedin"></i>
+         <i class="localizacao-icons fa-brands fa-tiktok"></i>
+         
+      </p>
+    </div>
+    <img class="localizacao-img" src="img/nossaloja.png" alt="localizacao da loja">
+  </div>
+  <!--Fim Localização-->
+  <!--Inicio Footer-->
+  <footer class="footer">
+    <p>Desenvolvido por Henrique como Mini-Projeto durante o curso Full-Stack DEVinHouse | © 2023 Henrique Mafra.</p>
+  </footer>
+  <!--Fim Footer-->
